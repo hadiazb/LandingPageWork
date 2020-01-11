@@ -90,13 +90,16 @@ header .filtro ul .desplegable1{
   flex-direction: row;
   justify-content:  space-between;
   width: 250px;
+  background-color: rgb(8, 8, 8, .7);
 }
 header .filtro ul .desplegable2{
   width: 80px;
+  background-color: rgb(8, 8, 8, .7);
 }
 header .filtro ul .desplegable3{
   width: 100px;
   text-align: center;
+  background-color: rgb(8, 8, 8, .7);
 }
 header .filtro ul li:hover{
   background-color: yellow;
@@ -131,6 +134,9 @@ header .filtro ul > li > ul > li:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-width: 2px;
+  padding-inline-start: 0.8em;
+  border-color: black;
 }
 .contenedor-formulario form fieldset label {
   padding-left: 10px;
@@ -146,27 +152,34 @@ header .filtro ul > li > ul > li:hover{
 .contenedor-formulario form fieldset:hover {
   background-color: yellow;
   cursor: pointer;
+  border-color: white;
 }
 
 .home{
-  height: 600px;
-  background-color: rgb(223, 223, 223);
+  /* height: 600px; */
+  background-color: rgb(223, 223, 223, .5);
   padding-left: 110px;
   padding-right: 110px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .home .titulo{
   text-align: center;
-  padding-top: 25px;
-  margin: 10px auto;
-  text-shadow: 0 0 10px yellow;
+  padding: 10px 0 15px 0;
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-family: 'Arial';
 }
 
 .home  .images figure img{
   width: 250px;
   height: 250px;
+}
+.home .images{
+  display: grid;
+  background-color: yellow;
+  grid-template:400px 400px  / 1fr 1fr 1fr 1fr;
+}
+.home .images .img img{
+  height: 375px;
+  width: 90%;
 }
